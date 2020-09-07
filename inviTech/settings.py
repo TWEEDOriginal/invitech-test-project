@@ -23,7 +23,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'sv2p8hfna#eo08$2hae+r$l)pkxdc#b)x-68l7*t-#(l@mw(!k'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['csvimporter1.herokuapp.com', '127.0.0.1']
 
