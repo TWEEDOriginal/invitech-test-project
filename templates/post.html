@@ -1,0 +1,30 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSV Document</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}"/>
+</head>
+<body>
+    <h1>Upload succesful, view your results</h1>
+    <table>
+        <tr>
+       {% for name in names %} 
+                <th>{{ name }}</th>
+        {% endfor %}   
+                </tr>
+                
+    {% for dict_item in csv_list %}
+              <tr>
+        {% for key, value in dict_item.items %}   
+              
+                <td>{{ value }}</td>
+                {% endfor %}   
+              </tr>
+              {% endfor %}   
+</table>
+</html>
